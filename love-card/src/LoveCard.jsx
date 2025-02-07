@@ -38,8 +38,8 @@ export default function LoveCard() {
           <div className="card-back">
             <p className="message">Happy Valentine's Day! 💖</p>
             <p className="sub-message">
-              You are my greatest adventure, my happiest moment, and my forever
-              love.
+              Roses are red, violets are blue, my heart is perfect because of
+              you.🌹
             </p>
             <button className="play-button" onClick={handlePlaySong}>
               Play Song 🎶
