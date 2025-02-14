@@ -2,15 +2,17 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: center; /* Centers the components */
+  justify-content: center; /* Centers the cards */
   align-items: center; /* Aligns items vertically */
+  flex-wrap: wrap; /* Allows wrapping on small screens */
   padding: 20px;
 }
 
-/* Tablet & Mobile - Stack items vertically */
+/* On small screens, keep them side by side but adjust spacing */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    gap: 30px; /* Adds extra spacing for better appearance */
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensures they don't shrink too much */
   }
 }
