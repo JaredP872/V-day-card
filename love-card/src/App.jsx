@@ -1,9 +1,9 @@
 import LoveCard from "./LoveCard";
-import ValentinesGame from "./ValentinesGame"; // Import the new game component
+import ValentinesGame from "./ValentinesGame";
 
 function App() {
   return (
-    <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
+    <div className="container">
       <LoveCard />
       <ValentinesGame />
     </div>
