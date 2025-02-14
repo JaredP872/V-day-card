@@ -30,20 +30,32 @@ export default function LoveCard() {
         onClick={handleOpen}
         initial={{ rotateY: 0 }}
         animate={{ rotateY: isOpen ? 180 : 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        whileHover={{ scale: 1.05 }}
       >
         {!isOpen ? (
-          <div className="card-front">Tap to Open 💌</div>
+          <div className="card-front gradient-bg shadow-lg">
+            <p className="text-glow">Tap to Open 💌</p>
+          </div>
         ) : (
-          <div className="card-back">
-            <p className="message">Happy Valentine's Day! 💖</p>
+          <div className="card-back gradient-bg shadow-lg">
+            <p className="message neon-text">Happy Valentine's Day! 💖</p>
             <p className="sub-message">
               Roses are red, violets are blue, my heart is perfect because of
               you.🌹
             </p>
-            <button className="play-button" onClick={handlePlaySong}>
-              Play Song 🎶
-            </button>
+            <div className="spotify-container">
+              <iframe
+                style={{ borderRadius: "12px" }}
+                src="https://open.spotify.com/embed/track/3SAga35lAPYdjj3qyfEsCF?utm_source=generator"
+                width="100%"
+                height="150"
+                frameBorder="0"
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         )}
       </motion.div>
