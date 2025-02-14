@@ -1,5 +1,6 @@
 import LoveCard from "./LoveCard";
 import ValentinesGame from "./ValentinesGame";
+import "./App.css";
 
 function App() {
   return (

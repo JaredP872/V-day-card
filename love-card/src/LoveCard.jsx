@@ -47,11 +47,11 @@ export default function LoveCard() {
             <div className="spotify-container">
               <iframe
                 style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/track/3SAga35lAPYdjj3qyfEsCF?utm_source=generator"
+                src="https://open.spotify.com/embed/track/2SyMl67slr9yJA9YJFC3mV?utm_source=generator"
                 width="100%"
                 height="150"
                 frameBorder="0"
-                allowFullScreen
+                allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>

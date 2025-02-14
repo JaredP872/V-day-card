@@ -8,11 +8,19 @@
   padding: 20px;
 }
 
-/* On small screens, keep them side by side but adjust spacing */
+/* Tablet screens (768px and below) */
 @media (max-width: 768px) {
   .container {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Ensures they don't shrink too much */
+    flex-direction: row; /* Keeps them side by side */
+    justify-content: space-around; /* Prevents excessive shrinking */
+    flex-wrap: wrap; /* Wraps when needed */
+  }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column; /* Stack on very small screens */
+    align-items: center;
   }
 }
