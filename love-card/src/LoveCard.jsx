@@ -41,8 +41,7 @@ export default function LoveCard() {
           <div className="card-back gradient-bg shadow-lg">
             <p className="message neon-text">Happy Valentine's Day! 💖</p>
             <p className="sub-message">
-              Roses are red, violets are blue, my heart is perfect because of
-              you.🌹
+              Roses are red, violets are blue, I'm so happy that I met you🌹
             </p>
             <div className="spotify-container">
               <iframe
